@@ -10,7 +10,7 @@ const Book = styled.div`
   padding-inline: var(--pj-spacing-8);
   height: 738px;
   width: 984px;
-  background: url('/journal.jpg') no-repeat;
+  background: url('./journal.jpg') no-repeat;
   background-size: cover;
   display: flex;
   gap: var(--pj-spacing-8);

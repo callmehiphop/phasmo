@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Lazy Dog Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Lazy Dog Regular'), url('/lazy_dog.woff') format('woff');
+    src: local('Lazy Dog Regular'), url('./lazy_dog.woff') format('woff');
   }
 
   :root {
