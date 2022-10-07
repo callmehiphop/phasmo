@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+
+import JournalProvider from './contexts/Journal';
+import EvidencePage from './pages/Evidence';
+import GhostPage from './pages/Ghost';
+
+const Book = styled.div`
+  margin: 0 auto;
+  padding-block: var(--pj-spacing-7);
+  padding-inline: var(--pj-spacing-8);
+  height: 738px;
+  width: 984px;
+  background: url('/journal.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: var(--pj-spacing-8);
+
+  & > * {
+    width: 50%;
+  }
+
+  h2 {
+    padding-bottom: var(--pj-spacing-2);
+    border-bottom: solid var(--pj-border-1) var(--pj-black);
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <JournalProvider>
+      <Book>
+        <EvidencePage />
+        <GhostPage />
+      </Book>
+    </JournalProvider>
   );
 }
 
