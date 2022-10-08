@@ -1,17 +1,22 @@
 import styled from 'styled-components';
 
+import { borders, opacities, sizes } from '../../styles/vars';
+
 const Button = styled.button`
   cursor: pointer;
+  outline: none;
   font-family: inherit;
   font-size: inherit;
+  letter-spacing: inherit;
+  color: inherit;
   background: none;
   border: none;
   border-radius: 50%;
-  height: var(--pj-size-4);
-  opacity: ${props => props.suspect ? '1' : 'var(--pj-opacity-0)'};
+  height: ${sizes.buttonHeight};
+  opacity: ${props => props.suspect ? opacities.normal : opacities.disabled};
 
   &:focus {
-    outline: solid var(--pj-border-0) var(--pj-black);
+    border: ${borders.border1};
   }
 `;
 

@@ -1,5 +1,8 @@
 import styled from 'styled-components';
+
 import { useJournalContext } from '../../contexts/Journal';
+import Divider from '../../common/Divider';
+import { spacings } from '../../styles/vars';
 
 const Container = styled.div`
   display: flex;
@@ -7,17 +10,16 @@ const Container = styled.div`
 `;
 
 const Hints = styled.div`
-  margin-top: var(--pj-spacing-4);
   display: flex;
   flex-direction: column;
-  gap: var(--pj-spacing-6);
+  gap: ${spacings.space6};
 `;
 
 const EvidenceList = styled.div`
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  gap: var(--pj-spacing-1);
+  gap: ${spacings.space1};
 `;
 
 const Ghost = () => {
@@ -30,6 +32,7 @@ const Ghost = () => {
   return (
     <Container>
       <h2>{ghost.name}</h2>
+      <Divider />
       <Hints>
         {ghost.description.split('\n').map(text => (<p>{text}</p>))}
         {ghost.strength && (<p>Strength: {ghost.strength}</p>)}
