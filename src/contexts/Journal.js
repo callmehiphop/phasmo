@@ -11,9 +11,7 @@ const JournalProvider = ({ children }) => {
   const value = [evidence, { ghost, setGhost }];
 
   return (
-    <JournalContext.Provider value={value}>
-      {children}
-    </JournalContext.Provider>
+    <JournalContext.Provider value={value}>{children}</JournalContext.Provider>
   );
 };
 

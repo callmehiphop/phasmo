@@ -8,4 +8,4 @@ const evidence = {
   FREEZING_TEMPS: 'Freezing Temperatures',
 };
 
-export default evidence
+export default evidence;

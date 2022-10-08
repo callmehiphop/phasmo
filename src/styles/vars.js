@@ -5,7 +5,7 @@ export const colors = {
 
 export const opacities = {
   normal: '1',
-  disabled: '0.2'
+  disabled: '0.2',
 };
 
 export const spacings = {
@@ -34,5 +34,5 @@ export const borders = {
 };
 
 export const gradients = {
-  strikethrough: `linear-gradient(90deg, ${colors.darkgrey} 0%, ${colors.darkgrey} 80%, rgba(0,0,0,0) 100%)`
+  strikethrough: `linear-gradient(90deg, ${colors.darkgrey} 0%, ${colors.darkgrey} 80%, rgba(0,0,0,0) 100%)`,
 };

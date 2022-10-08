@@ -39,7 +39,7 @@ const EvidencePage = () => {
       <h2>Evidence</h2>
       <Divider />
       <EvidenceList className="evidence-list">
-        {evidence.map(ev => (
+        {evidence.map((ev) => (
           <EvidenceCheckbox key={ev.id} {...ev} />
         ))}
       </EvidenceList>
@@ -48,7 +48,7 @@ const EvidencePage = () => {
         Using the evidence we've found, we believe the ghost is a
       </GhostHeadline>
       <GhostGrid>
-        {ghosts.map(ghost => (
+        {ghosts.map((ghost) => (
           <Button
             key={ghost.name}
             suspect={suspects.includes(ghost)}

@@ -28,12 +28,11 @@ const EvidenceList = styled.div`
 const Ghost = () => {
   const [{ evidence }, { ghost }] = useJournalContext();
   const ghostEvidence = useMemo(
-    () => ghost && ghost.evidence.map(name => (
-      <EvidenceCheckbox
-        key={name}
-        {...find(evidence, { name })}
-      />
-    )),
+    () =>
+      ghost &&
+      ghost.evidence.map((name) => (
+        <EvidenceCheckbox key={name} {...find(evidence, { name })} />
+      )),
     [ghost, evidence]
   );
 
@@ -46,9 +45,11 @@ const Ghost = () => {
       <h2>{ghost.name}</h2>
       <Divider />
       <Hints>
-        {ghost.description.split('\n').map(text => (<p>{text}</p>))}
-        {ghost.strength && (<p>Strength: {ghost.strength}</p>)}
-        {ghost.weakness && (<p>Weakness: {ghost.weakness}</p>)}
+        {ghost.description.split('\n').map((text) => (
+          <p>{text}</p>
+        ))}
+        {ghost.strength && <p>Strength: {ghost.strength}</p>}
+        {ghost.weakness && <p>Weakness: {ghost.weakness}</p>}
       </Hints>
       <EvidenceList>
         <h3>Evidence</h3>

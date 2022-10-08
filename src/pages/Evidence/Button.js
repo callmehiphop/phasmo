@@ -13,7 +13,8 @@ const Button = styled.button`
   border: none;
   border-radius: 50%;
   height: ${sizes.buttonHeight};
-  opacity: ${props => props.suspect ? opacities.normal : opacities.disabled};
+  opacity: ${(props) =>
+    props.suspect ? opacities.normal : opacities.disabled};
 
   &:focus {
     border: ${borders.border1};

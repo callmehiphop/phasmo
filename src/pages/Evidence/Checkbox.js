@@ -4,7 +4,14 @@ import styled from 'styled-components';
 import { useJournalContext } from '../../contexts/Journal';
 import { EvidenceState } from '../../hooks/useEvidence';
 
-import { borders, colors, gradients, opacities, spacings, sizes } from '../../styles/vars';
+import {
+  borders,
+  colors,
+  gradients,
+  opacities,
+  spacings,
+  sizes,
+} from '../../styles/vars';
 
 const Container = styled.div`
   cursor: pointer;
@@ -12,10 +19,12 @@ const Container = styled.div`
   display: flex;
   justify-items: center;
   gap: ${spacings.space3};
-  opacity: ${props => props.disabled ? opacities.disabled : opacities.normal};
+  opacity: ${(props) =>
+    props.disabled ? opacities.disabled : opacities.normal};
 
   &:after {
-    display: ${props => props.state === EvidenceState.IGNORED ? 'block' : 'none'};
+    display: ${(props) =>
+      props.state === EvidenceState.IGNORED ? 'block' : 'none'};
     content: ' ';
     height: ${sizes.border1};
     background: ${colors.darkgrey};
@@ -27,7 +36,8 @@ const Container = styled.div`
   }
 
   &:before {
-    content: '${props => props.state === EvidenceState.SELECTED ? 'X' : ' '}';
+    content: '${(props) =>
+      props.state === EvidenceState.SELECTED ? 'X' : ' '}';
     font-size: 2.5rem;
     line-height: 1.5rem;
     display: flex;
@@ -43,12 +53,8 @@ const Checkbox = ({ name, state, disabled }) => {
   const onClick = () => !disabled && toggleEvidence(name);
 
   return (
-    <Container
-      state={state}
-      disabled={disabled}
-      onClick={onClick}
-    >
-     {name}
+    <Container state={state} disabled={disabled} onClick={onClick}>
+      {name}
     </Container>
   );
 };
