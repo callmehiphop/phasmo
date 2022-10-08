@@ -31,7 +31,7 @@ const GhostGrid = styled.div`
 `;
 
 const EvidencePage = () => {
-  const [{ evidence, suspects }, { setGhost }] = useJournalContext();
+  const [{ evidence, suspects }, { ghost, setGhost }] = useJournalContext();
 
   return (
     <div>
@@ -47,13 +47,14 @@ const EvidencePage = () => {
         Using the evidence we've found, we believe the ghost is a
       </GhostHeadline>
       <GhostGrid>
-        {ghosts.map((ghost) => (
+        {ghosts.map((gh) => (
           <Button
-            key={ghost.name}
-            suspect={suspects.includes(ghost)}
-            onClick={() => setGhost(ghost)}
+            key={gh.name}
+            active={gh === ghost}
+            suspect={suspects.includes(gh)}
+            onClick={() => setGhost(gh)}
           >
-            {ghost.name}
+            {gh.name}
           </Button>
         ))}
       </GhostGrid>

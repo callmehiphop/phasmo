@@ -15,10 +15,7 @@ const Button = styled.button`
   height: ${sizes.buttonHeight};
   opacity: ${(props) =>
     props.suspect ? opacities.normal : opacities.disabled};
-
-  &:focus {
-    border: ${borders.border1};
-  }
+  border: ${(props) => (props.active ? borders.border1 : 'none')};
 `;
 
 export default Button;
