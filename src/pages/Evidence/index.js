@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-import { useJournalContext } from '../../contexts/Journal';
-import ghosts from '../../ghosts';
-
-import Divider from '../../common/Divider';
+import ghosts from 'ghosts';
+import { useJournalContext } from 'contexts/Journal';
+import { spacings } from 'styles/vars';
+import Divider from 'common/Divider';
+import EvidenceCheckbox from 'common/EvidenceCheckbox';
 import Button from './Button';
-import EvidenceCheckbox from '../../common/EvidenceCheckbox';
-import { spacings } from '../../styles/vars';
 
 const EvidenceList = styled.div`
   display: flex;

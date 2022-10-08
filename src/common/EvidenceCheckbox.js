@@ -1,8 +1,8 @@
 import { useCallback, useMemo } from 'react';
 import styled from 'styled-components';
 
-import { useJournalContext } from '../contexts/Journal';
-import { EvidenceState } from '../hooks/useEvidence';
+import { useJournalContext } from 'contexts/Journal';
+import { EvidenceState } from 'hooks/useEvidence';
 
 import {
   borders,

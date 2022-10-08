@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import JournalProvider from './contexts/Journal';
-import EvidencePage from './pages/Evidence';
-import GhostPage from './pages/Ghost';
-import { spacings, sizes } from './styles/vars';
+import JournalProvider from 'contexts/Journal';
+import EvidencePage from 'pages/Evidence';
+import GhostPage from 'pages/Ghost';
+import { spacings, sizes } from 'styles/vars';
 
 const Book = styled.div`
   padding-block: ${spacings.space7};

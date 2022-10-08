@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { colors, sizes } from '../styles/vars';
+import { colors, sizes } from 'styles/vars';
 
 const Divider = styled.div`
   width: 100%;

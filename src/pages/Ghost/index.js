@@ -2,10 +2,10 @@ import { find } from 'lodash';
 import { useMemo } from 'react';
 import styled from 'styled-components';
 
-import { useJournalContext } from '../../contexts/Journal';
-import Divider from '../../common/Divider';
-import EvidenceCheckbox from '../../common/EvidenceCheckbox';
-import { spacings } from '../../styles/vars';
+import { useJournalContext } from 'contexts/Journal';
+import Divider from 'common/Divider';
+import EvidenceCheckbox from 'common/EvidenceCheckbox';
+import { spacings } from 'styles/vars';
 
 const Container = styled.div`
   display: flex;

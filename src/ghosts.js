@@ -1,4 +1,4 @@
-import Evidence from './evidence';
+import Evidence from 'evidence';
 
 const ghosts = [
   {

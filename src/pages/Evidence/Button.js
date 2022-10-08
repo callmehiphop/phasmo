@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { borders, opacities, sizes } from '../../styles/vars';
+import { borders, opacities, sizes } from 'styles/vars';
 
 const Button = styled.button`
   cursor: pointer;

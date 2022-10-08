@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import { useCallback, useMemo, useState } from 'react';
 
-import Evidence from '../evidence';
-import ghosts from '../ghosts';
+import Evidence from 'evidence';
+import ghosts from 'ghosts';
 
 const EvidenceState = {
   NONE: 0,

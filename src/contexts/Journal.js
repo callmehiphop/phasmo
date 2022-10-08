@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react';
-import useEvidence from '../hooks/useEvidence';
+import useEvidence from 'hooks/useEvidence';
 
 const JournalContext = createContext();
 const useJournalContext = () => useContext(JournalContext);
