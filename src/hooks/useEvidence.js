@@ -31,8 +31,7 @@ const useEvidence = () => {
     () => pickByState(evidenceMap, EvidenceState.IGNORED),
     [evidenceMap]
   );
-console.log('found', found);
-console.log('ignored', ignored);
+
   const suspects = useMemo(
     () => ghosts.filter(({ evidence }) => {
       return ignored.every(ev => !evidence.includes(ev))

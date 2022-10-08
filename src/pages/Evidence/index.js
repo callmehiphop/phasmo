@@ -5,7 +5,7 @@ import ghosts from '../../ghosts';
 
 import Divider from '../../common/Divider';
 import Button from './Button';
-import Checkbox from './Checkbox';
+import EvidenceCheckbox from '../../common/EvidenceCheckbox';
 import { spacings } from '../../styles/vars';
 
 const EvidenceList = styled.div`
@@ -40,7 +40,7 @@ const EvidencePage = () => {
       <Divider />
       <EvidenceList className="evidence-list">
         {evidence.map(ev => (
-          <Checkbox key={ev.id} {...ev} />
+          <EvidenceCheckbox key={ev.id} {...ev} />
         ))}
       </EvidenceList>
       <Divider />
@@ -50,6 +50,7 @@ const EvidencePage = () => {
       <GhostGrid>
         {ghosts.map(ghost => (
           <Button
+            key={ghost.name}
             suspect={suspects.includes(ghost)}
             onClick={() => setGhost(ghost)}
           >
