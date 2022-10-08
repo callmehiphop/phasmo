@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback } from 'react';
 import styled from 'styled-components';
 
 import { useJournalContext } from 'contexts/Journal';
@@ -50,7 +50,10 @@ const Checkbox = styled.div`
 
 const EvidenceCheckbox = ({ name, state, disabled }) => {
   const [{ toggleEvidence }] = useJournalContext();
-  const onClick = () => !disabled && toggleEvidence(name);
+  const onClick = useCallback(
+    () => !disabled && toggleEvidence(name),
+    [name, disabled, toggleEvidence]
+  );
 
   return (
     <Checkbox state={state} disabled={disabled} onClick={onClick}>

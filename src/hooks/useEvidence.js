@@ -63,7 +63,7 @@ const useEvidence = () => {
           !found.includes(name) &&
           !ignored.includes(name),
       })),
-    [remaining, found]
+    [evidenceMap, remaining, found, ignored]
   );
 
   const toggleEvidence = useCallback(
