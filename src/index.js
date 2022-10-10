@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     background: ${colors.black};
   }
 
@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
     letter-spacing: 0.075rem;
     color: ${colors.darkgrey};
 
-    @media (min-width: ${sizes.bookWidth}) and (orientation: landscape) {
+    @media (min-width: ${sizes.bookWidth}) and (min-height: ${sizes.bookHeight}) {
       display: flex;
       justify-content: center;
       align-items: center;
