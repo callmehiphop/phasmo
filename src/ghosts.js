@@ -31,7 +31,7 @@ const ghosts = [
     name: 'Phantom',
     evidence: [
       Evidence.SPIRIT_BOX,
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.DOTS_PROJECTOR,
     ],
     description:
@@ -44,7 +44,7 @@ const ghosts = [
     name: 'Poltergeist',
     evidence: [
       Evidence.SPIRIT_BOX,
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.GHOST_WRITING,
     ],
     description:
@@ -56,7 +56,7 @@ const ghosts = [
   {
     name: 'Banshee',
     evidence: [
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.GHOST_ORB,
       Evidence.DOTS_PROJECTOR,
     ],
@@ -70,7 +70,7 @@ const ghosts = [
     name: 'Jinn',
     evidence: [
       Evidence.EMF_LEVEL_5,
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.FREEZING_TEMPS,
     ],
     description:
@@ -117,7 +117,7 @@ const ghosts = [
   {
     name: 'Demon',
     evidence: [
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.GHOST_WRITING,
       Evidence.FREEZING_TEMPS,
     ],
@@ -169,7 +169,7 @@ const ghosts = [
   {
     name: 'Hantu',
     evidence: [
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.GHOST_ORB,
       Evidence.FREEZING_TEMPS,
     ],
@@ -182,7 +182,7 @@ const ghosts = [
     name: 'Goryo',
     evidence: [
       Evidence.EMF_LEVEL_5,
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.DOTS_PROJECTOR,
     ],
     description:
@@ -195,7 +195,7 @@ const ghosts = [
     name: 'Myling',
     evidence: [
       Evidence.EMF_LEVEL_5,
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.GHOST_WRITING,
     ],
     description:
@@ -245,7 +245,7 @@ const ghosts = [
   },
   {
     name: 'Obake',
-    evidence: [Evidence.EMF_LEVEL_5, Evidence.FINGERPRINTS, Evidence.GHOST_ORB],
+    evidence: [Evidence.EMF_LEVEL_5, Evidence.ULTRAVIOLET, Evidence.GHOST_ORB],
     description:
       'Obake are terrifying shape-shifters, capable of taking on many forms. They have been seen taking on humanoid shapes to attract their prey.',
     strength:
@@ -257,7 +257,7 @@ const ghosts = [
     name: 'The Mimic',
     evidence: [
       Evidence.SPIRIT_BOX,
-      Evidence.FINGERPRINTS,
+      Evidence.ULTRAVIOLET,
       Evidence.FREEZING_TEMPS,
     ],
     description:
